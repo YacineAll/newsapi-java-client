@@ -5,6 +5,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.yacineall.api.newsapi.exceptions.JSONConversionException;
+import org.yacineall.api.newsapi.exceptions.LoadFromResourcesException;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -82,9 +84,15 @@ class ToolsTest {
 
     @Test
     void testReadJsonAs_invalidJson() {
-        RuntimeException exception = assertThrows(RuntimeException.class,
+        LoadFromResourcesException exception = assertThrows(
+                LoadFromResourcesException.class,
                 () -> Tools.readJsonAs(tempJsonFile.getFileName().toString(), InvalidData.class));
-        assertTrue(exception.getMessage().contains("Failed to read resource"));
+        String exceptionMessage = String.format(
+                "Reading source '%s' as '%s' throw an exception",
+                tempJsonFile.getFileName().toString(), InvalidData.class
+        );
+
+        assertEquals(exceptionMessage, exception.getMessage());
     }
 
     @Test
@@ -99,9 +107,12 @@ class ToolsTest {
     @Test
     void testToJson_invalidObject() {
         InvalidData invalidData = new InvalidData();
-        RuntimeException exception = assertThrows(RuntimeException.class,
-                () -> Tools.toJson(invalidData));
-        assertTrue(exception.getMessage().contains("Failed to convert object to json"));
+        JSONConversionException exception = assertThrows(
+                JSONConversionException.class,
+                () -> Tools.toJson(invalidData)
+        );
+        String exceptionMessage = String.format("Failed to convert %s to json", invalidData);
+        assertEquals(exceptionMessage, exception.getMessage());
     }
 
     // Inner classes to use for deserialization testing
