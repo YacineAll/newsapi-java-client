@@ -14,7 +14,7 @@ public class URIException extends RuntimeException {
      *              unknown.)
      * @since 1.4
      */
-    public URIException(Throwable cause) {
+    public URIException(final Throwable cause) {
         super(cause);
     }
 }
