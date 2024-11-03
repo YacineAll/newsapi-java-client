@@ -15,7 +15,7 @@ public class LoadFromResourcesException extends RuntimeException {
      *                unknown.)
      * @since 1.4
      */
-    public LoadFromResourcesException(String message, Throwable cause) {
+    public LoadFromResourcesException(final String message, final Throwable cause) {
         super(message, cause);
     }
 }
