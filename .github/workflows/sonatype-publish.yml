@@ -1,9 +1,14 @@
 name: Maven Library Publish
 
 on:
-  release:
-    types: [ created ]
-
+  push:
+    branches:
+      - main
+      - staging
+  pull_request:
+    branches:
+      - main
+      - staging
 jobs:
   publish:
 
