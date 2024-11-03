@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "totalResults": 2,
+  "articles": [
+    {
+      "source": {
+        "id": "the-hill",
+        "name": "The Hill"
+      },
+      "author": "Al Weaver",
+      "title": "Senate Democrat on Biden, Cuban comments about Trump supporters: ‘I don’t like it’ - The Hill",
+      "description": "Sen. Peter Welch (D-Vt.) on Friday criticized comments made in recent days by President Biden and entrepreneur Mark Cuban about former President Trump’s supporters. The Vermont Democrat did not hide his displeasure when asked by reporters about Biden appearin…",
+      "url": "https://thehill.com/homenews/senate/4965982-welch-trump-supporters-cuban-biden/",
+      "urlToImage": "https://thehill.com/wp-content/uploads/sites/2/2024/07/welchpeter_073124gn01_w.jpg?w=1280",
+      "publishedAt": "2024-11-01T16:35:56Z",
+      "content": "Skip to content\r\nSen. Peter Welch (D-Vt.) on Friday criticized comments made in recent days by President Biden and entrepreneur Mark Cuban about former President Trump’s supporters.\r\nThe Vermont Demo… [+1951 chars]"
+    },
+    {
+      "source": {
+        "id": "the-washington-post",
+        "name": "The Washington Post"
+      },
+      "author": "Andrew Jeong, Victoria Bisset, Miriam Berger, Steve Hendrix, Amanda Coletta, Hazem Balousha, Alon Rom, Meg Kelly, Imogen Piper, Evan Hill, Abbie Cheeseman, Louisa Loveluck, Suzan Haidamous",
+      "title": "Live Briefing: Israel strikes Beirut area; U.S. pushes to rekindle peace talks - The Washington Post",
+      "description": "U.S. Secretary of State Antony Blinken argued that Israel has accomplished its main objectives in Gaza and thus the “focus now must be on ending the war.”",
+      "url": "https://www.washingtonpost.com/world/2024/11/01/israel-iran-war-news-lebanon-hezbollah-gaza-palestine/",
+      "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/DMDAWN3PSMMUJP5KAV4UOATMVU.jpg&w=1440",
+      "publishedAt": "2024-11-01T16:31:01Z",
+      "content": "The Israeli military carried out strikes on Beiruts southern suburbs overnight, the first time in several days that Israel has targeted the area.\r\nThe Israel Defense Forces Arabic-language spokesman,… [+1491 chars]"
+    }
+  ]
+}

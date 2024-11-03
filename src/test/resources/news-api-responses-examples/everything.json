@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "totalResults": 2,
+  "articles": [
+    {
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Gizmodo Deals",
+      "title": "Beats Solo 4 at 50% Off: Did Amazon Get Apple’s Approval for This Insane Price?",
+      "description": "These Apple-owned headphones are the best you can get for under $100.",
+      "url": "https://gizmodo.com/beats-solo-4-at-50-off-did-amazon-get-apples-approval-for-this-insane-price-2000519375",
+      "urlToImage": "https://gizmodo.com/app/uploads/2024/10/beats-solo-4-2.jpg",
+      "publishedAt": "2024-11-02T12:40:58Z",
+      "content": "Amazon has launched what appears to be an early Black Friday sale and offers the recently released Beats Solo 4 headphones at an incredible $99 down from their regular price of $199. This 50% discoun… [+2037 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Gizmodo Deals",
+      "title": "Amazon Clears iPad 9 Stock With 40% Off; There Will Be None Left by Black Friday",
+      "description": "An iPad for less than $200 is a new low.",
+      "url": "https://gizmodo.com/amazon-clears-ipad-9-stock-with-40-off-there-will-be-none-left-by-black-friday-2000519389",
+      "urlToImage": "https://gizmodo.com/app/uploads/2024/09/ipad-9th.jpg",
+      "publishedAt": "2024-11-02T13:10:21Z",
+      "content": "Amazon has unleashed a terrific early Black Friday deal on the 9th generation iPad: it just slashed its price to a mere $199 from its original $329. This massive 40% discount matches the lowest price… [+1701 chars]"
+    }
+  ]
+}
