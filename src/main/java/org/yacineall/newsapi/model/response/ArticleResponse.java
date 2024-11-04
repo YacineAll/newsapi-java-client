@@ -9,7 +9,8 @@ import java.util.List;
  *
  * @param status The status of the API response.
  * @param totalResults The total number of results returned by the API.
- * @param articles A list of {@link Article} objects representing the articles returned by the API.
+ * @param articles A list of {@link Article} objects
+ *                 representing the articles returned by the API.
  */
 public record ArticleResponse(
         String status,

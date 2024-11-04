@@ -20,11 +20,11 @@ import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 class EverythingServiceTest {
 
     private static final String EXPECTED_RESPONSE_CONTENT_FILE = "news-api-responses-examples/everything.json";
-    public static HttpResponse<String> mockHttpResponse;
-    public static NewsAPIService newsAPIService;
-    public static HttpClient httpClient;
-    public static JsonNode expectedResponse;
-    private static final ObjectMapper objectMapper = new ObjectMapper();
+    private static HttpResponse<String> mockHttpResponse;
+    private static NewsAPIService newsAPIService;
+    private static HttpClient httpClient;
+    private static JsonNode expectedResponse;
+    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
     @BeforeAll
     public static void setUp() {
@@ -48,9 +48,8 @@ class EverythingServiceTest {
         assertInstanceOf(ArticleResponse.class, response);
         ArticleResponse articleResponse = (ArticleResponse) response;
         assertEquals(2, articleResponse.articles().size());
-        JsonNode actual = objectMapper.readTree(Tools.toJson(expectedResponse));
+        JsonNode actual = OBJECT_MAPPER.readTree(Tools.toJson(expectedResponse));
         assertEquals(expectedResponse, actual);
     }
-
 
 }

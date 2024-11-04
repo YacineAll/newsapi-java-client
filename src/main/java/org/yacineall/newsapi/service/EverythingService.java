@@ -4,7 +4,8 @@ import java.net.http.HttpClient;
 
 /**
  * Service class for interacting with the Everything endpoint of the News API.
- * This service extends the {@link NewsAPIService} and provides specific functionality for the Everything endpoint.
+ * This service extends the {@link NewsAPIService}
+ * and provides specific functionality for the Everything endpoint.
  */
 public class EverythingService extends NewsAPIService {
 
@@ -24,4 +25,3 @@ public class EverythingService extends NewsAPIService {
         super(httpClient);
     }
 }
-

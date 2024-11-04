@@ -15,20 +15,46 @@ public record EverythingRequest(
         String pageSize,
         String page,
         String searchIn
-) implements INewsAPIRequest{
+) implements INewsAPIRequest {
+    /**
+     * The initial size of params.
+     */
+    private static final int N_PARAMS_ER = 10;
     @Override
     public String getURIString() {
-        List<String> params = new ArrayList<>(10);
-        if (q != null) { params.add("q=" + q); }
-        if (sources != null) { params.add("sources=" + sources); }
-        if (domains != null) { params.add("domains=" + domains); }
-        if (from != null) { params.add("from=" + from); }
-        if (to != null) { params.add("to=" + to); }
-        if (language != null) { params.add("language=" + language); }
-        if (sortBy != null) { params.add("sortBy=" + sortBy); }
-        if (pageSize != null) { params.add("pageSize=" + pageSize); }
-        if (page != null) { params.add("page=" + page); }
-        if (searchIn != null) { params.add("searchIn=" + searchIn); }
+        List<String> params = new ArrayList<>(N_PARAMS_ER);
+        if (q != null) {
+            params.add("q=" + q);
+        }
+        if (sources != null) {
+            params.add("sources=" + sources);
+        }
+
+        if (domains != null) {
+            params.add("domains=" + domains);
+        }
+
+        if (from != null) {
+            params.add("from=" + from);
+        }
+        if (to != null) {
+            params.add("to=" + to);
+        }
+        if (language != null) {
+            params.add("language=" + language);
+        }
+        if (sortBy != null) {
+            params.add("sortBy=" + sortBy);
+        }
+        if (pageSize != null) {
+            params.add("pageSize=" + pageSize);
+        }
+        if (page != null) {
+            params.add("page=" + page);
+        }
+        if (searchIn != null) {
+            params.add("searchIn=" + searchIn);
+        }
         return params.stream().collect(Collectors.joining("&", "?", ""));
     }
 }
