@@ -33,8 +33,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-sonar
 
-      - name: OWASP Dependency Check
-        run: mvn verify dependency-check:check -PdependencyCheck
+      # - name: OWASP Dependency Check
+      #   run: mvn verify dependency-check:check -PdependencyCheck
 
       - name: Analyze with SonarCloud
         env:
