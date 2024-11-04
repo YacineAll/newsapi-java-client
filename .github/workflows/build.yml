@@ -37,6 +37,8 @@ jobs:
         run: mvn -B verify -Pbuild org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=YacineAll_newsapi-java-client
       - name: Run tests and collect coverage
         run: mvn -Pbuild -B test
+      - name: Run the mutation testing to verify the effectiveness of tests
+        run: mvn test-compile org.pitest:pitest-maven:mutationCoverage -Pbuild
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
         env:
