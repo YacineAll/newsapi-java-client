@@ -93,9 +93,8 @@
     </dependencies>
 
     <profiles>
-        <!-- Build profile (includes Sonar analysis) -->
         <profile>
-            <id>build</id>
+            <id>dependencyCheck</id>
             <build>
                 <plugins>
                     <plugin>
@@ -117,6 +116,14 @@
                             </execution>
                         </executions>
                     </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <!-- Build profile (includes Sonar analysis) -->
+        <profile>
+            <id>build</id>
+            <build>
+                <plugins>
                     <plugin>
                         <groupId>org.pitest</groupId>
                         <artifactId>pitest-maven</artifactId>

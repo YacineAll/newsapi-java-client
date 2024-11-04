@@ -33,15 +33,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-sonar
 
-      - name: Build and analyze with SonarCloud
+      - name: OWASP Dependency Check
+        run: mvn verify dependency-check:check -PdependencyCheck
+
+      - name: Analyze with SonarCloud
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -B verify -Pbuild org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-          -Dsonar.projectKey=YacineAll_newsapi-java-client
-
-      - name: OWASP Dependency Check
-        run: mvn verify dependency-check:check -Pbuild
+        run: mvn -B verify -Pbuild org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=YacineAll_newsapi-java-client
 
       - name: Run tests and collect coverage
         run: mvn -B test -Pbuild
