@@ -42,6 +42,9 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B verify -Pbuild org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=YacineAll_newsapi-java-client
 
+      - name: Generate Java documentation
+        run: mvn javadoc:javadoc -Pbuild
+
       - name: Run tests and collect coverage
         run: mvn -B test -Pbuild
 
