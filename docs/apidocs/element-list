@@ -1,0 +1,7 @@
+org.yacineall.api.newsapi.builder
+org.yacineall.api.newsapi.exceptions
+org.yacineall.api.newsapi.model
+org.yacineall.api.newsapi.model.request
+org.yacineall.api.newsapi.model.response
+org.yacineall.api.newsapi.service
+org.yacineall.api.utils
