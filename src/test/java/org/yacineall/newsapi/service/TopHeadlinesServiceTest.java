@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.yacineall.newsapi.model.response.ArticleResponse;
 import org.yacineall.newsapi.model.response.INewsAPIResponse;
-import org.yacineall.utils.Tools;
+import org.yacineall.newsapi.utils.Tools;
 
 import java.io.IOException;
 import java.net.http.HttpClient;

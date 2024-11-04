@@ -7,7 +7,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.yacineall.newsapi.exceptions.JSONConversionException;
 import org.yacineall.newsapi.exceptions.LoadFromResourcesException;
-import org.yacineall.utils.Tools;
 
 import java.io.IOException;
 import java.nio.file.Files;
