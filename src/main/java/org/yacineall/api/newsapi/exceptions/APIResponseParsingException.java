@@ -15,7 +15,7 @@ public class APIResponseParsingException extends RuntimeException {
      *                unknown.)
      * @since 1.4
      */
-    public APIResponseParsingException(String message, Throwable cause) {
+    public APIResponseParsingException(final String message, final Throwable cause) {
         super(message, cause);
     }
 }

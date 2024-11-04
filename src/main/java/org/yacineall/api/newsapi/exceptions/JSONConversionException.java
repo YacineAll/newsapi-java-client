@@ -15,7 +15,7 @@ public class JSONConversionException extends RuntimeException {
      *                unknown.)
      * @since 1.4
      */
-    public JSONConversionException(String message, Throwable cause) {
+    public JSONConversionException(final String message, final Throwable cause) {
         super(message, cause);
     }
 }

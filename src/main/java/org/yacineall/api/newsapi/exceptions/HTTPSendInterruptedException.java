@@ -15,7 +15,7 @@ public class HTTPSendInterruptedException extends RuntimeException {
      *                unknown.)
      * @since 1.4
      */
-    public HTTPSendInterruptedException(String message, Throwable cause) {
+    public HTTPSendInterruptedException(final String message, final Throwable cause) {
         super(message, cause);
     }
 }

@@ -1,6 +1,7 @@
 package org.yacineall.api.newsapi.utils;
 
 import org.junit.jupiter.api.Test;
+import org.yacineall.api.newsapi.builder.RequestBuilder;
 import org.yacineall.api.newsapi.exceptions.APIKeyIsNullException;
 import org.yacineall.api.newsapi.exceptions.IllegalSearchInValueException;
 import org.yacineall.api.newsapi.exceptions.URIException;
